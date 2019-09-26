@@ -1,0 +1,209 @@
+﻿<%@ Master Language="VB" CodeFile="restomasterPage.master.vb" Inherits="rasto_rastomasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Inter Connectivity</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="fct/images/fevicon.html">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="fct/assets/css/bootstrap.min.css">
+    
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="fct/assets/css/font-awesome.min.css">
+    
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="fct/assets/css/animate.min.css">
+    
+    <!-- OwlCarousel CSS -->
+    <link rel="stylesheet" href="fct/assets/css/owl.carousel.css">
+    
+    <!-- Magnific popup CSS -->
+    <link rel="stylesheet" href="fct/assets/css/magnific-popup.css">
+    
+    <!-- Slicknav CSS -->
+    <link rel="stylesheet" href="fct/assets/css/slicknav.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="fct/style.css">
+    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="fct/assets/css/responsive.css">
+    
+    <!-- jQuery -->
+    <script src="fct/assets/js/jquery-1.11.3.min.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<!-- Preloader start -->
+    <div class="factorian-site-preloader-wrap">
+        <div class="spinner-2"></div>
+    </div>
+    <!-- Preloader end -->
+    
+    <!-- Header top area start -->
+    <div class="header-top-area wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href=#><i class="fa fa-envelope"></i> </a> <span class="seprator">|</span> 
+                    <a href="tel:3244221313"><i class="fa fa-phone"></i>+919685741230</a> <span class="seprator">|</span> 
+                    <i class="fa fa-clock-o"></i>  
+                </div>
+                <div class="col-md-6 text-right">
+ 
+                </div>
+                <li>
+
+                    &nbsp&nbsp;
+
+                    <h4><asp:Label ID="Label1" runat="server" Text="" class="linkdin itl-tooltip" ></asp:Label></h4>
+                    
+                  </li>
+            </div>
+        </div>
+    </div>
+    <!-- Header top area end -->
+    
+     <!-- Mainmenu start -->
+     <div id="header_menu" class="design">
+        <div class="mainmenu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                       <h1>RIC</h1>
+                    </div>
+                    
+                    <div class="responsive-menu-wrap"></div>
+                </div>
+                <div class="col-md-9">
+                    <div class="mainmenu menubaralign">
+                        <ul id="navigation">
+                            <li class="../cust/mainhomepage.aspx"><a href="">HOME</a></li>
+                            <li><a href="#">RESTO TOOLS</a>
+                            <ul>
+                                    <li><a href="addmenu.aspx"> Menu</a></li>
+                                    <li><a href="addfood.aspx">Food Add</a></li>
+                                    <li><a href="addunit.aspx">Unit Add</a></li>
+                                    <li><a href="inquirydetail.aspx">INQUIRY DETAILS</a></li>
+                                    <li><a href="receivedorder.aspx">RECEIVED ORDER</a></li>
+                                    <li><a href="ordercanceled.aspx">ORDER CANCEL</a></li>
+                             </ul>
+                            
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     </div>
+    
+    <!-- Mainmenu end -->
+    
+<!--heading2 start-->
+<div id="page-wrapper">
+<!--Heading2 end-->
+ 
+    <form id="form1" runat="server">
+    <h3><asp:Label ID="username" runat="server" class="usrnm" Text="" ></asp:Label>
+    <asp:Button ID="btnlog" runat="server" class="btnlog" Text="Logout" CausesValidation="false" />
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <!-- Footer start -->
+    <footer class="site-footer wow fadeIn">
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-wid">
+                            <h2 class="footer-logo">Ric</h2>
+                            <p>Restaurant Inter Connectivity is the Online Platform Where customer can place order at multiple resturant and they get verifty of foods.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-wid">
+                            <h3 class="footer-wid-title">Admin Links</h3>
+                            <ul>
+                                <li><a href="#">Main Home</a></li>
+                                <li><a href="#">Admin Home</a></li>
+                                <li><a href="#">Admin Accounts</a></li>
+                                <li><a href="#"></a>Advertise</li>
+                                <li><a href="#">Category</a></li>
+                                <li><a href="#">City</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-wid">
+                            <h3 class="footer-wid-title">External Links</h3>
+                            <ul>
+                                <li><a target="_blank" href="http://themeforest.net/">FaceBook</a></li>
+                                <li><a target="_blank" href="http://codecanyon.net/">Google</a></li>
+                                <li><a target="_blank" href="http://videohive.net/">Linkedin</a></li>
+                                <li><a target="_blank" href="http://audiojungle.net/">YouTube</a></li>
+                                <li><a target="_blank" href="http://graphicriver.net/">Food Panda</a></li>
+                                <li><a target="_blank" href="http://photodone.net/">Stackoverflow</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-wid">
+                            <h3 class="footer-wid-title">Contact us</h3>
+                            <p>Email: food@RIC.com<br/>
+                            Call us: +931-5214-261<br/>
+                            +742-2952-461<br/>
+                            Address:  23 Marca House,<br/>
+                            New york, USA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        &copy; 2017 Your Site Name. 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <!-- Footer end -->                    
+    
+    <!-- Bootstrap JS -->
+    <script src="fct/assets/js/bootstrap.min.js"></script>
+    
+    <!-- Magnific Popup JS -->
+    <script src="fct/assets/js/jquery.magnific-popup.min.js"></script>
+    
+    <!-- OwlCarousel JS -->
+    <script src="fct/assets/js/owl.carousel.min.js"></script>
+    
+    <!-- WOW JS -->
+    <script src="fct/assets/js/wow-1.3.0.min.js"></script>
+    
+    <!-- SlickNav JS -->
+    <script src="fct/assets/js/jquery.slicknav.min.js"></script>
+    
+    <!-- Active JS -->
+    <script src="fct/assets/js/active.js"></script>
+    
+
+    </form>
+</body>
+</html>
